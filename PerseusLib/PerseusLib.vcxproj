@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A5FA95D4-9CD2-43BB-BBF3-530BFE8FBA23}</ProjectGuid>
+    <RootNamespace>PerseusLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="..\..\..\..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\extras\visual_studio_integration\MSBuildExtensions\CUDA 5.5.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/nodefaultlib:libcmt %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>.;%(AdditionalLibraryDirectories);$(CudaToolkitLibDir)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>FreeImage.lib;cudart.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_20,sm_20</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>C:\CUDA\v3.2\include;C:\SDK\FreeImage\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Primitives\PerseusImage.h" />
+    <ClInclude Include="Primitives\Vector2D.h" />
+    <ClInclude Include="Primitives\Vector3D.h" />
+    <ClInclude Include="Primitives\Vector4D.h" />
+    <ClInclude Include="Renderer\Engine\DrawingEngine.h" />
+    <ClInclude Include="Renderer\Engine\DrawingPrimitives.h" />
+    <ClInclude Include="Renderer\Model\ModelH.h" />
+    <ClInclude Include="Renderer\Model\ModelVertexH.h" />
+    <ClInclude Include="Renderer\Model\Model.h" />
+    <ClInclude Include="Renderer\Model\ModelFace.h" />
+    <ClInclude Include="Renderer\Model\ModelGroup.h" />
+    <ClInclude Include="Renderer\Model\ModelVertex.h" />
+    <ClInclude Include="Renderer\Objects\Renderer3DObject.h" />
+    <ClInclude Include="Renderer\Objects\Renderer3DView.h" />
+    <ClInclude Include="Renderer\Primitives\Camera3D.h" />
+    <ClInclude Include="Renderer\Primitives\Quaternion.h" />
+    <ClInclude Include="Renderer\Transforms\CameraCoordinateTransform.h" />
+    <ClInclude Include="Renderer\Transforms\CoordinateTransform.h" />
+    <ClInclude Include="Renderer\Transforms\ObjectCoordinateTransform.h" />
+    <ClInclude Include="Utils\Debug.h" />
+    <ClInclude Include="Utils\FileUtils.h" />
+    <ClInclude Include="Utils\HistogramEngine.h" />
+    <ClInclude Include="Utils\ImageUtils.h" />
+    <ClInclude Include="Utils\MathUtils.h" />
+    <ClInclude Include="Utils\Timer.h" />
+    <ClInclude Include="Objects\HistogramVarBin.h" />
+    <ClInclude Include="Objects\IterationConfiguration.h" />
+    <ClInclude Include="Objects\Object3D.h" />
+    <ClInclude Include="Objects\Object3DParams.h" />
+    <ClInclude Include="Objects\Pose3D.h" />
+    <ClInclude Include="Objects\StepSize3D.h" />
+    <ClInclude Include="Objects\View3D.h" />
+    <ClInclude Include="Objects\View3DParams.h" />
+    <ClInclude Include="Others\PerseusDefines.h" />
+    <ClInclude Include="CUDA\CUDAConvolution.h" />
+    <ClInclude Include="CUDA\CUDAData.h" />
+    <ClInclude Include="CUDA\CUDADefines.h" />
+    <ClInclude Include="CUDA\CUDADT.h" />
+    <ClInclude Include="CUDA\CUDAEF.h" />
+    <ClInclude Include="CUDA\CUDAEngine.h" />
+    <ClInclude Include="CUDA\CUDARenderer.h" />
+    <ClInclude Include="CUDA\CUDAScharr.h" />
+    <ClInclude Include="CUDA\CUDAUtils.h" />
+    <ClInclude Include="Optimiser\Engine\OptimisationEngine.h" />
+    <ClInclude Include="Optimiser\EFs\EFSingleObject.h" />
+    <ClInclude Include="Optimiser\EFs\IEnergyFunction.h" />
+    <ClInclude Include="PerseusLib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Renderer\Engine\DrawingEngine.cpp" />
+    <ClCompile Include="Renderer\Engine\DrawingPrimitives.cpp" />
+    <ClCompile Include="Renderer\Model\Model.cpp" />
+    <ClCompile Include="Renderer\Model\ModelGroup.cpp" />
+    <ClCompile Include="Renderer\Model\ModelH.cpp" />
+    <ClCompile Include="Renderer\Primitives\Quaternion.cpp" />
+    <ClCompile Include="Renderer\Transforms\CameraCoordinateTransform.cpp" />
+    <ClCompile Include="Renderer\Transforms\CoordinateTransform.cpp" />
+    <ClCompile Include="Renderer\Transforms\ObjectCoordinateTransform.cpp" />
+    <ClCompile Include="Utils\FileUtils.cpp" />
+    <ClCompile Include="Utils\HistogramEngine.cpp" />
+    <ClCompile Include="Utils\ImageUtils.cpp" />
+    <ClCompile Include="Utils\MathUtils.cpp" />
+    <ClCompile Include="Optimiser\Engine\OptimisationEngine.cpp" />
+    <ClCompile Include="Optimiser\EFs\EFSingleObject.cpp" />
+    <ClCompile Include="PerseusLibTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="CUDA\CUDAConvolution.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\CUDADT.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\CUDAEF.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\CUDAEngine.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\CUDARenderer.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\CUDAScharr.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\CUDAUtils.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\..\..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\extras\visual_studio_integration\MSBuildExtensions\CUDA 5.5.targets" />
+  </ImportGroup>
+</Project>

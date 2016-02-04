@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Primives">
+      <UniqueIdentifier>{904b14cd-4946-4783-9c2a-c2a3741f4c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primives\Source Files">
+      <UniqueIdentifier>{aa2ad0ec-2249-4b76-8d2d-a48d01c9a515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primives\Header Files">
+      <UniqueIdentifier>{88dc2c23-a15e-4702-9bdd-8ddd0a1aa152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{77539d5d-9163-4fe4-97ba-7b47a7049b39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Engine">
+      <UniqueIdentifier>{97197afa-3f40-4da2-bb63-a6e762f6450b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Engine\Header Files">
+      <UniqueIdentifier>{98b2c4ad-8780-4d81-96e7-f17ba4201ee5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Engine\Source Files">
+      <UniqueIdentifier>{ec33b7e1-44cf-46f4-b07c-99ba6c12be19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Model">
+      <UniqueIdentifier>{79f1c4a4-00a3-479e-ad58-41ccda364a87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Model\Homogenous">
+      <UniqueIdentifier>{ddf673a5-fc1b-46f3-a014-b9595b76892b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Model\Homogenous\Header Files">
+      <UniqueIdentifier>{47166ce0-5346-4c34-a234-bd32247db7ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Model\Homogenous\Source Files">
+      <UniqueIdentifier>{925cca3b-81f0-42ae-9349-4d30ef618310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Model\Normal">
+      <UniqueIdentifier>{7eeb3769-157b-462a-8132-8266f7870f04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Model\Normal\Header Files">
+      <UniqueIdentifier>{60d753e3-4a58-41e0-b383-130fab05914d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Model\Normal\Source Files">
+      <UniqueIdentifier>{c524c02c-fee3-43ae-b313-7acd201f30e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Objects">
+      <UniqueIdentifier>{850244e6-e5e7-40a3-a4c1-ce09b79287ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Objects\Header Files">
+      <UniqueIdentifier>{706af62c-bd58-450f-a03e-a4d1af5395c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Objects\Source Files">
+      <UniqueIdentifier>{8c1c2898-6abd-4331-b9c2-04da4bf0c67d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Primitives">
+      <UniqueIdentifier>{db82365b-d1ef-4d65-9c04-6745d8cbe889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Primitives\Header Files">
+      <UniqueIdentifier>{c9d10103-9a55-457f-8c6d-d640caa74981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Primitives\Source Files">
+      <UniqueIdentifier>{4b3ede4c-89a7-45f0-a795-3f8f90b88756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Transforms">
+      <UniqueIdentifier>{5f4cedc8-ef41-44f7-9963-f8799a6b1446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Transforms\Header Files">
+      <UniqueIdentifier>{7117e751-f4ca-48cf-854b-139f04558395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Transforms\Source Files">
+      <UniqueIdentifier>{f290142d-5e40-4d04-867d-6d8246a61d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{4f2f1c36-1e17-4ab8-974d-9a7348e68a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Header Files">
+      <UniqueIdentifier>{f874f4aa-18ab-4cec-9475-702948407953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Source Files">
+      <UniqueIdentifier>{fac9407a-8f21-43a2-a78f-f96402ca0fa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{bb4c0ec1-2a55-4597-8364-ae28c313845a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Source Files">
+      <UniqueIdentifier>{5fb5f0ed-7c2b-48b7-8129-efc2d8183062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Header Files">
+      <UniqueIdentifier>{9eb82bfa-aba7-4968-96e1-b265e90b907e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Others">
+      <UniqueIdentifier>{99136028-eae4-4334-b9c3-50ced3b8672f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Others\Header Files">
+      <UniqueIdentifier>{c224bae7-c8d2-40cf-82c3-d25966eb8fa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Others\Source Files">
+      <UniqueIdentifier>{eba46cd1-e51f-4f6b-8b88-31a58f7c3bcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA">
+      <UniqueIdentifier>{0739f987-5c40-4847-a878-70f65f628bf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\Header Files">
+      <UniqueIdentifier>{ad2b83fb-7dab-4e82-a974-522816b3949f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\Source Files">
+      <UniqueIdentifier>{fd3b4f5a-ab50-4569-834c-32df99c1adc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Optimiser">
+      <UniqueIdentifier>{a2414907-f54d-4e98-967c-73441b88e666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Optimiser\Engine">
+      <UniqueIdentifier>{b290a081-134a-4058-a453-16a09cad5e08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Optimiser\Engine\Header Files">
+      <UniqueIdentifier>{65014a90-316e-4337-bcd7-488c5d85fa29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Optimiser\Engine\Source Files">
+      <UniqueIdentifier>{34cda308-4365-447d-b2eb-8e09b63f602b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Optimiser\EFs">
+      <UniqueIdentifier>{434719d1-1a27-4a39-a516-91e25594096e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Optimiser\EFs\Header Files">
+      <UniqueIdentifier>{4abbc02f-b9d0-4409-9995-ac37c4b62dfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Optimiser\EFs\Source Files">
+      <UniqueIdentifier>{5965f958-b4ed-41ea-a2e4-da21fb92b3db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Primitives\PerseusImage.h">
+      <Filter>Primives\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Vector2D.h">
+      <Filter>Primives\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Vector3D.h">
+      <Filter>Primives\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Vector4D.h">
+      <Filter>Primives\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Engine\DrawingEngine.h">
+      <Filter>Renderer\Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Engine\DrawingPrimitives.h">
+      <Filter>Renderer\Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Model\ModelH.h">
+      <Filter>Renderer\Model\Homogenous\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Model\ModelVertexH.h">
+      <Filter>Renderer\Model\Homogenous\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Model\Model.h">
+      <Filter>Renderer\Model\Normal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Model\ModelFace.h">
+      <Filter>Renderer\Model\Normal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Model\ModelGroup.h">
+      <Filter>Renderer\Model\Normal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Model\ModelVertex.h">
+      <Filter>Renderer\Model\Normal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Objects\Renderer3DObject.h">
+      <Filter>Renderer\Objects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Objects\Renderer3DView.h">
+      <Filter>Renderer\Objects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Primitives\Camera3D.h">
+      <Filter>Renderer\Primitives\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Primitives\Quaternion.h">
+      <Filter>Renderer\Primitives\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Transforms\CameraCoordinateTransform.h">
+      <Filter>Renderer\Transforms\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Transforms\CoordinateTransform.h">
+      <Filter>Renderer\Transforms\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Transforms\ObjectCoordinateTransform.h">
+      <Filter>Renderer\Transforms\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Debug.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\FileUtils.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\HistogramEngine.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ImageUtils.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\MathUtils.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Timer.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\HistogramVarBin.h">
+      <Filter>Objects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\IterationConfiguration.h">
+      <Filter>Objects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Object3D.h">
+      <Filter>Objects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Object3DParams.h">
+      <Filter>Objects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Pose3D.h">
+      <Filter>Objects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\StepSize3D.h">
+      <Filter>Objects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\View3D.h">
+      <Filter>Objects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\View3DParams.h">
+      <Filter>Objects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Others\PerseusDefines.h">
+      <Filter>Others\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA\CUDAConvolution.h">
+      <Filter>CUDA\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA\CUDAData.h">
+      <Filter>CUDA\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA\CUDADefines.h">
+      <Filter>CUDA\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA\CUDADT.h">
+      <Filter>CUDA\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA\CUDAEF.h">
+      <Filter>CUDA\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA\CUDAEngine.h">
+      <Filter>CUDA\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA\CUDARenderer.h">
+      <Filter>CUDA\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA\CUDAScharr.h">
+      <Filter>CUDA\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA\CUDAUtils.h">
+      <Filter>CUDA\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Optimiser\Engine\OptimisationEngine.h">
+      <Filter>Optimiser\Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Optimiser\EFs\EFSingleObject.h">
+      <Filter>Optimiser\EFs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Optimiser\EFs\IEnergyFunction.h">
+      <Filter>Optimiser\EFs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PerseusLib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Renderer\Engine\DrawingEngine.cpp">
+      <Filter>Renderer\Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Engine\DrawingPrimitives.cpp">
+      <Filter>Renderer\Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Model\Model.cpp">
+      <Filter>Renderer\Model\Normal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Model\ModelGroup.cpp">
+      <Filter>Renderer\Model\Normal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Model\ModelH.cpp">
+      <Filter>Renderer\Model\Normal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Primitives\Quaternion.cpp">
+      <Filter>Renderer\Primitives\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Transforms\CameraCoordinateTransform.cpp">
+      <Filter>Renderer\Transforms\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Transforms\CoordinateTransform.cpp">
+      <Filter>Renderer\Transforms\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Transforms\ObjectCoordinateTransform.cpp">
+      <Filter>Renderer\Transforms\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\FileUtils.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\HistogramEngine.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ImageUtils.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\MathUtils.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Optimiser\Engine\OptimisationEngine.cpp">
+      <Filter>Optimiser\Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Optimiser\EFs\EFSingleObject.cpp">
+      <Filter>Optimiser\EFs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PerseusLibTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="CUDA\CUDAConvolution.cu">
+      <Filter>CUDA\Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\CUDADT.cu">
+      <Filter>CUDA\Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\CUDAEF.cu">
+      <Filter>CUDA\Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\CUDAEngine.cu">
+      <Filter>CUDA\Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\CUDARenderer.cu">
+      <Filter>CUDA\Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\CUDAScharr.cu">
+      <Filter>CUDA\Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\CUDAUtils.cu">
+      <Filter>CUDA\Source Files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
